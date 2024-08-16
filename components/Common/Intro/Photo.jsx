@@ -1,0 +1,70 @@
+"use client";
+
+import { motion } from "framer-motion";
+import Image from "next/image";
+
+const Photo = () => {
+  return (
+    <div className="w-full h-full relative">
+      <motion.div
+        initial={{ opacity: 0 }}
+        animate={{
+          opacity: 1,
+          transition: { delay: 1, duration: 0.4, ease: "easeIn" },
+        }}
+      >
+        {/* image */}
+        <motion.div
+          initial={{ opacity: 0 }}
+          animate={{
+            opacity: 1,
+            transition: { delay: 1.4, duration: 0.4, ease: "easeInOut" },
+          }}
+          className="w-[80px] h-[80px] xl:w-[80px] xl:h-[80px] mix-blend-lighten absolute"
+        >
+          <Image
+            src="/images/endric.jpg"
+            priority
+            quality={100}
+            fill
+            alt=""
+            sizes="(max-width: 600px) 100vw, (max-width: 1200px) 50vw, 500px"
+            className="object-contain rounded-full"
+          />
+        </motion.div>
+
+        {/* circle */}
+        <motion.svg
+          className="w-[80px] h-[80px] xl:w-[80px] xl:h-[80px]"
+          fill="transparent"
+          viewBox="0 0 508 508"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <motion.circle
+            cx="253"
+            cy="253"
+            r="252"
+            stroke="#57ebd7"
+            strokeWidth="12"
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            initial={{
+              strokeDasharray: "24 10 0 0",
+            }}
+            animate={{
+              strokeDasharray: ["15 120 25 25", "16 25 92 72", "4 250 22 22"],
+              rotate: [120, 360],
+            }}
+            transition={{
+              duration: 20,
+              repeat: Infinity,
+              repeatType: "reverse",
+            }}
+          />
+        </motion.svg>
+      </motion.div>
+    </div>
+  );
+};
+
+export default Photo;
