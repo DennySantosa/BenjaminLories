@@ -9,7 +9,6 @@ import Skills from './Skills';
 import Photo from './Photo';
 import Image from 'next/image';
 import { NAME, DESIGNATION, SOCIAL_LINKS } from '../../../constants/constants';
-import Endric from '../../../public/images/endric.jpg';
 import { motion } from "framer-motion";
 
 const Intro = () => {
