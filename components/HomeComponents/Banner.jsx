@@ -59,7 +59,7 @@ const Banner = () => {
                                     <div class="talktext text-white font-bold">
                                         <p>Hi!</p>
                                         <p>I can help you.</p>
-                                        <p>Anythig and Anytime and Anywhere.</p>
+                                        <p>Anything and Anytime and Anywhere.</p>
                                     </div>
                                  </div>   
                             )}
