@@ -1,11 +1,11 @@
 export const NAME = 'Benjamin Loires';
 
-export const DESIGNATION = `Full Stack Developer | Open Source Contributor | 3D Professional`;
+export const DESIGNATION = `Full Stack Developer | Blockchain Technology`;
 
 export const DETAILS = {
-  Residence: 'Australia',
-  City: 'Sydney',
-  Age: '26',
+  Residence: 'Hong Kong',
+  City: 'Kowloon',
+  Age: '28',
 };
 
 export const SKILLS = [
@@ -38,6 +38,7 @@ export const TECH_STACK = [
   'TypeScript',
   'NodeJS',
   'Redux',
+  'Blockchain',
   'Zustand',
   'CSS',
   'SCSS',
@@ -57,12 +58,12 @@ export const TECH_STACK = [
 ];
 
 export const CONTACTS = {
-  EMAIL: 'benjamin0707@gmail.com',
+  EMAIL: 'topwebdev97@gmail.com',
   PHONE: '+923159591822',
 };
 export const SOCIAL_LINKS = {
-  GITHUB: 'https://github.com/benjamin0707',
+  GITHUB: 'https://github.com/benjaminlories',
   LINKEDIN: 'https://www.linkedin.com/in/benjamin0707/',
-  // TWITTER: 'https://twitter.com/endric9778',
-  FACEBOOK: 'https://www.facebook.com/benjamin0707',
+  TWITTER: 'https://twitter.com/endric9778',
+  SKYPE: 'https://skype.com/',
 };

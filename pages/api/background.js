@@ -3,24 +3,24 @@ const background = [
         eduCards: [
             {
                 id: 0,
-                title: 'UET Peshawar',
-                degree: 'BS, Computer System Engineering',
-                detail: "Bachelor's Degree in Computer System Engineering from UET Peshawar.",
-                year: '2018-2022'
+                title: 'The Hong Kong University of Science and Technology',
+                degree: 'Computer Engineering and Economics',
+                detail: "Bachelor's Degree in Program Development",
+                year: '2013-2017'
             },
-            {
-                id: 1,
-                title: 'Peshawar Model Degree College',
-                degree: 'HSSC, Pre Engineering',
-                detail: "Completed FSC part 1 and part 2 in Pre-Engineering from Peshawar Model Degree College.",
-                year: '2015-2017'
-            },
+            // {
+            //     id: 1,
+            //     title: 'Peshawar Model Degree College',
+            //     degree: 'HSSC, Pre Engineering',
+            //     detail: "Completed FSC part 1 and part 2 in Pre-Engineering from Peshawar Model Degree College.",
+            //     year: '2015-2017'
+            // },
             {
                 id: 2,
-                title: 'Falcon Academy',
+                title: "St. Joseph's College",
                 degree: 'SSC, Science Subjects',
-                detail: "Completed SSC part 1 and part 2 in Science subjects from Falcon Academy Seni Gumbat Kohat",
-                year: '2013-2015'
+                detail: "Completed SSC part 1 and part 2 in Science subjects from St. Joseph's College Seni Gumbat Kohat",
+                year: '2010-2013'
             },
         ]
     },
@@ -32,8 +32,8 @@ const background = [
                 role: 'Frontend Developer',
                 url: 'https://jmm.ltd/',
                 desc: 'As a frontend developer, I use React, Next & JavaScript to build user interfaces for web applications.',
-                year: '02/2023 - Present',
-                location: 'Sydney, Australia'
+                year: '10/2023 - 03/2024',
+                location: 'Kowloon, Hong Kong'
             },
             {
                 id: 2,
@@ -41,8 +41,8 @@ const background = [
                 role: 'Internee',
                 url: 'no website',
                 desc: 'As an Internee, I learned how to use React & JavaScript to build interactive websites.',
-                year: '02/2023 - Present',
-                location: 'Sydney, Australia'
+                year: '02/2020 - 03/20221',
+                location: 'Kowloon, Hong Kong'
             },
             {
                 id: 3,
@@ -50,8 +50,8 @@ const background = [
                 role: 'PHP Developer',
                 url: 'https://www.encoderbytes.com/',
                 desc: "I work there as a PHP developer, there I learned how to do CRUD'S operations in PHP, also I worked on Firebase",
-                year: '09/2020 - 02/2021',
-                location: 'Sydney, Australia'
+                year: '09/2018 - 02/2019',
+                location: 'Kowloon, Hong Kong'
             },
 
         ]

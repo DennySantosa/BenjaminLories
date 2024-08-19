@@ -18,14 +18,14 @@ const review = [
         clientName: 'Jake Corry',
         clientLocation: 'Germany',
         clientSource: 'Fiverr',
-        clientReview: "Osama is extremely knowledgeable and helpful. He knows in and out of web app development . His understanding of different technologies and frameworks in the space is also very impressive. I hope I get the chance to work with him again"
+        clientReview: "Benjamin is extremely knowledgeable and helpful. He knows in and out of web app development . His understanding of different technologies and frameworks in the space is also very impressive. I hope I get the chance to work with him again"
     },
     {
         id: 4,
         clientName: 'Blaise Labriola',
         clientLocation: 'France',
         clientSource: 'Fiverr',
-        clientReview: 'I have worked with Osama and he is very professional and excellent software  developer. I admire his speed of development and quality of work when given an assignment.'
+        clientReview: 'I have worked with Benjamin and he is very professional and excellent software  developer. I admire his speed of development and quality of work when given an assignment.'
     },
 ]
 export default function handler(req, res) {

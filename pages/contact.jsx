@@ -1,12 +1,13 @@
 import { useState } from 'react';
 import BannerLayout from '../components/Common/BannerLayout';
 import { FaGithub, FaLinkedin, FaTwitter } from 'react-icons/fa'
-import { SiUpwork } from 'react-icons/si'
+import { SiSkype, SiUpwork } from 'react-icons/si'
 import { HiMail, HiUser } from 'react-icons/hi'
-import { BsChatTextFill } from 'react-icons/bs'
+import { BsChatTextFill, BsSkype } from 'react-icons/bs'
 import Fiverr_Icon from '../components/Fiverr_Icon';
 import Footer from '../components/Footer';
 import { Modal } from 'antd';
+import { DETAILS,CONTACTS,SOCIAL_LINKS } from '../constants/constants';
 
 const Contact = () => {
     const [isOpen, setIsOpen] = useState(false)
@@ -20,38 +21,38 @@ const Contact = () => {
                         <div className="card_stylings w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Country:</span>
-                                <span className='text-LightGray md:text-sm'>Australia</span>
+                                <span className='text-LightGray md:text-sm'>{DETAILS.Residence}</span>
                             </div>
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>City:</span>
-                                <span className='text-LightGray md:text-sm'>Sydney</span>
+                                <span className='text-LightGray md:text-sm'>{DETAILS.City}</span>
                             </div>
-                            <div className="flex justify-between items-center">
+                            {/* <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Company:</span>
                                 <span className='text-LightGray md:text-sm'>KKRJ</span>
-                            </div>
+                            </div> */}
                         </div>
                         <div className="card_stylings rounded-xl w-full md:w-1/2 p-5 md:p-6 lg:p-8 flex flex-col gap-y-4">
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Email:</span>
-                                <span className='text-LightGray text-sm'>benjamin0707@gmail.com</span>
+                                <span className='text-LightGray text-sm'>{CONTACTS.EMAIL}</span>
                             </div>
-                            <div className="flex justify-between items-center">
+                            {/* <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Linkedin:</span>
                                 <span className='text-LightGray text-sm'>benjamin0707</span>
-                            </div>
+                            </div> */}
                             <div className="flex justify-between items-center">
                                 <span className='md:text-base'>Phone:</span>
-                                <span className='text-LightGray text-sm'>+92 (315) 9591822</span>
+                                <span className='text-LightGray text-sm'>{CONTACTS.PHONE}</span>
                             </div>
                         </div>
                     </div>
                 </div>
                 <div className="h-16 w-full card_stylings text-xl sm:text-3xl flex gap-x-8 sm:gap-x-16 items-center justify-center text-Snow">
-                    <a className='hover:scale-125 ease-in-out duration-700' href="" target='_blank' rel="noreferrer"><HiMail /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700' href="https://github.com/benjamin0707" target='_blank' rel="noreferrer"><FaGithub /></a>
-                    <a className='hover:scale-125 ease-in-out duration-700' href="https://www.linkedin.com/in/benjamin0707/" target='_blank' rel="noreferrer"><FaLinkedin /></a>
-                    {/* <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href="#" target='_blank' rel="noreferrer"><SiUpwork /></a> */}
+                    <a className='hover:scale-125 ease-in-out duration-700' href={`mailto:${CONTACTS.EMAIL}`} target='_blank' rel="noreferrer"><HiMail /></a>
+                    <a className='hover:scale-125 ease-in-out duration-700' href={SOCIAL_LINKS.GITHUB} target='_blank' rel="noreferrer"><FaGithub /></a>
+                    {/* <a className='hover:scale-125 ease-in-out duration-700' href="https://www.linkedin.com/in/benjamin0707/" target='_blank' rel="noreferrer"><FaLinkedin /></a> */}
+                    <a className='hover:scale-125 ease-in-out duration-700 text-2xl sm:text-4xl mt-1' href={SOCIAL_LINKS.SKYPE} target='_blank' rel="noreferrer"><BsSkype /></a>
                 </div>
 
 
@@ -106,7 +107,7 @@ const Contact = () => {
             >
                 <div className='flex flex-col items-center justify-center'>
                     <h1 className='text-Green font-bold text-2xl'>In Progress</h1>
-                    <a className='underline text-Snow' target='_blank' href='https://github.com/benjamin0707/portfolio'>Be the one to integrate this!</a>
+                    <a className='underline text-Snow' target='_blank' href='https://github.com/benjaminlories/portfolio'>Be the one to integrate this!</a>
                 </div>
             </Modal>
             <Footer />

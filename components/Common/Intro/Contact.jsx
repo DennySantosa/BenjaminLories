@@ -12,10 +12,10 @@ const Contact = () => {
           <Link href={`mailto:${CONTACTS.EMAIL}`}>{CONTACTS.EMAIL}</Link>
         </span>
       </div>
-      <div className='flex flex-col'>
+      {/* <div className='flex flex-col'>
         <span className='text-Snow text-xs font-bold'>Phone</span>
         <span className='text-xs text-gray-600'>{CONTACTS.PHONE}</span>
-      </div>
+      </div> */}
     </div>
   );
 };

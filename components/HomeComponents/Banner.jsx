@@ -2,14 +2,22 @@ import Typewriter from 'typewriter-effect';
 import BannerLayout from '../Common/BannerLayout';
 import { motion } from "framer-motion";
 import { Link } from 'react-scroll';
+import { useState } from 'react';
 
 const Banner = () => {
+
+    const [isVisible, setIsVisible] = useState(false);
+
+    const handleClick = () => {
+        setIsVisible(prevState => !prevState);
+    };
+
     return (
         <BannerLayout>
             <div className="absolute inset-0 z-20 flex flex-col items-center py-6 justify-center w-full h-full bg-gradient-to-t from-MidNightBlack">
                 <div className="bg-LightGray/10 w-[95%] h-[90%] px-4 py-2 rounded-xl overflow-hidden flex md:block">
                     <div className="flex items-center md:items-center md:justify-around">
-                        <div className="">
+                        <div className="ml-[50px]">
                             <div className="">
                                 <motion.span
                                     animate = {{color: ['#ffffff', '#ff0000', '#00ff00', '#0000ff', '#ffffff']}}
@@ -30,7 +38,7 @@ const Banner = () => {
                                                 options={{
                                                     strings:
                                                         ['Full Stack Developer ',
-                                                            ' 3D Professional '],
+                                                            ' Web GL Professional '],
                                                     wrapperClassName: "underline underline-offset-8  decoration-indigo-500",
                                                     autoStart: true,
                                                     loop: true,
@@ -43,22 +51,29 @@ const Banner = () => {
                             {/* <Link to='intro' spy={true} smooth={true} duration={500} offset={-50} className="button">Here Click</Link> */}
                         </div>
 
-                        {/* <div class="talk-bubble tri-right round right-in z-20">
-                                <div class="talktext">
-                                    <p>Moving our way back up the right side indented. Uses .round and .right-in</p>
-                                </div>
-                            </div>               
-                        */}
-                        <div className="w-48 h-52 relative hidden md:block">
+                              
+                       
+                        <div className="w-[250px] h-52 relative right-0">
+                            { isVisible && (
+                                <div className="talk-bubble tri-right round right-in z-20 ">
+                                    <div class="talktext text-white font-bold">
+                                        <p>Hi!</p>
+                                        <p>I can help you.</p>
+                                        <p>Anythig and Anytime and Anywhere.</p>
+                                    </div>
+                                 </div>   
+                            )}
+                                   
                             
-                            <img className='absolute top-8 w-full h-full' src="images/emoji.png" alt="emoji" />
+                            <img className='absolute top-8 ml-[230px] w-[200px] h-full z-10' src="images/emoji.png" alt="emoji" onClick={handleClick}/>
+
+                            
                         </div>
                       
-                        
                         <motion.div
                             // className="w-32 h-32 bg-green-500 flex items-center justify-center text-white"
-                            className="w-[100px] h-[70px] relative hidden md:block"
-                            animate={{ scale: [1, 1.1, 1] }} // Scale up to 1.5 and back to 1
+                            className="w-[120px] h-[70px] mt-[20px] z-0"
+                            animate={{ scale: [1, 1.2, 1] }} // Scale up to 1.5 and back to 1
                             transition={{
                                 duration: 2,         // Duration of one cycle
                                 repeat: Infinity,           // Repeat the animation 3 times
@@ -66,7 +81,8 @@ const Banner = () => {
                             }}
                             >
                             <img className='absolute top-20 w-full h-full' src="images/click-here.png" alt="emoji" />
-                        </motion.div>
+                            </motion.div>
+                        
                         {/* <div className="w-[100px] h-[70px] relative hidden md:block">
                             
                         </div> */}

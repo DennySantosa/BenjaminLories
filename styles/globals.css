@@ -135,12 +135,11 @@ body {
 
 /* CSS talk bubble */
 .talk-bubble {
-	margin: 40px;
-  display: inline-block;
+	margin: 30px 0px 0px -110px;
   position: relative;
-	width: 200px;
+	width: 350px;
 	height: auto;
-	background-color: lightyellow;
+	background-color: rgba(0, 0, 0, 0.7);
 }
 .border{
   border: 8px solid #666;
@@ -175,7 +174,7 @@ body {
   top: 0px;
 	bottom: auto;
 	border: 22px solid;
-	border-color: lightyellow transparent transparent transparent;
+	border-color:rgba(0, 0, 0, 0.7) transparent transparent transparent;
 }
 
 /* Right triangle, left side slightly down */
@@ -201,7 +200,7 @@ body {
   top: 38px;
 	bottom: auto;
 	border: 12px solid;
-	border-color: lightyellow lightyellow transparent transparent;
+	border-color: rgba(0, 0, 0, 0.7) rgba(0, 0, 0, 0.7) transparent transparent;
 }
 
 /*Right triangle, placed bottom left side slightly in*/
@@ -227,7 +226,7 @@ body {
   top: auto;
 	bottom: -20px;
 	border: 22px solid;
-	border-color: transparent transparent transparent lightyellow;
+	border-color: transparent transparent transparent rgba(0, 0, 0, 0.7);
 }
 
 /*Right triangle, placed bottom left side slightly in*/
@@ -253,7 +252,7 @@ body {
   top: auto;
 	bottom: -20px;
 	border: 12px solid;
-	border-color: lightyellow transparent transparent lightyellow;
+	border-color: rgba(0, 0, 0, 0.7) transparent transparent rgba(0, 0, 0, 0.7);
 }
 
 /*Right triangle, placed bottom right side slightly in*/
@@ -277,7 +276,7 @@ body {
 	right: 38px;
 	bottom: -20px;
 	border: 12px solid;
-	border-color: lightyellow lightyellow transparent transparent;
+	border-color: rgba(0, 0, 0, 0.7) rgba(0, 0, 0, 0.7) transparent transparent;
 }
 /*
 	left: -8px;
@@ -291,7 +290,7 @@ body {
   top: auto;
 	bottom: -20px;
 	border: 22px solid;
-	border-color: transparent transparent transparent lightyellow;
+	border-color: transparent transparent transparent rgba(0, 0, 0, 0.7);
 
 /*Right triangle, placed bottom right side slightly in*/
 .tri-right.border.btm-right:before {
@@ -314,7 +313,7 @@ body {
 	right: 0px;
 	bottom: -20px;
 	border: 12px solid;
-	border-color: lightyellow lightyellow transparent transparent;
+	border-color: rgba(0, 0, 0, 0.7) rgba(0, 0, 0, 0.7) transparent transparent;
 }
 
 /* Right triangle, right side slightly down*/
@@ -340,7 +339,7 @@ body {
   top: 38px;
 	bottom: auto;
 	border: 12px solid;
-	border-color: lightyellow transparent transparent lightyellow;
+	border-color: rgba(0, 0, 0, 0.7) transparent transparent rgba(0, 0, 0, 0.7);
 }
 
 /* Right triangle placed top right flush. */
@@ -366,7 +365,7 @@ body {
   top: 0px;
 	bottom: auto;
 	border: 20px solid;
-	border-color: lightyellow transparent transparent transparent;
+	border-color: rgba(0, 0, 0, 0.7) transparent transparent transparent;
 }
 
 /* talk bubble contents */
